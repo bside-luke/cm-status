@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Chainmonsters: Local status check</title>
+    <meta name="description" content="Status testing tool for Chainmonsters" />
+    <meta name="author" content="LKD70" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/skeleton.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="text/javascript" src="assets/js/ko.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 class="section-heading">Chainmonsters Local Status Checker</h3>
+      <h5 class="section-description" data-bind="text: completion">
+        Please wait for the below results to load.
+      </h5>
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Status</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody data-bind="foreach: servers">
+          <tr data-bind="css: status">
+            <td data-bind="text: friendly"></td>
+            <td data-bind="text: status"></td>
+            <td data-bind="text: taken"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  </body>
+</html>

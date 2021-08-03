@@ -1,0 +1,12 @@
+.responded {
+    background-color: #C9F5A6;
+    color:black;
+}
+.checking,.unchecked {
+    background-color: #F4DC82;
+    color:black;
+}
+.timeout {
+    background-color: #F48B6D;
+    color:black;
+}
