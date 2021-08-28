@@ -54,9 +54,10 @@ var PingModel = function (servers) {
 };
 
 var komodel = new PingModel([
-    { ep: 'http://104.236.193.198:9000', friendly: 'chainmonsters'},
-    { ep: 'https://62477.playfabapi.com', friendly: 'playfab'},
-    { ep: 'https://content-api.cloud.unity3d.com/api/v1/', friendly: 'unity'},
+    { ep: 'http://104.236.193.198:9000', friendly: 'chainmonsters' },
+    { ep: 'https://62477.playfabapi.com', friendly: 'playfab' },
+    { ep: 'https://content-api.cloud.unity3d.com/api/v1/', friendly: 'unity' },
+    { ep: 'config.uca.cloud.unity3d.com', friendly: 'unity-uca' }
 
 ]);
 
