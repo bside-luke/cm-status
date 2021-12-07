@@ -56,7 +56,9 @@ var PingModel = function (servers) {
 var komodel = new PingModel([
     { ep: 'https://62477.playfabapi.com', friendly: 'playfab' },
     { ep: 'https://content-api.cloud.unity3d.com/api/v1/', friendly: 'unity' },
-    { ep: 'config.uca.cloud.unity3d.com', friendly: 'unity-uca' }
+    { ep: 'config.uca.cloud.unity3d.com', friendly: 'unity-config' },
+    { ep: 'perf-events.cloud.unity3d.com', friendly: 'unity-perf'},
+    { ep: 'cdp.cloud.unity3d.com', friendly: 'unity-cdp'},
 
 ]);
 
